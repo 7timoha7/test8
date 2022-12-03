@@ -2,4 +2,49 @@
     border: 3px solid black;
     margin-bottom: 10px;
     width: 250px;
+    padding: 10px;
+    background: #97bcdf;
+    border-radius: 15px;
 }
+
+.btnDelete {
+    background: #a70d0d;
+    border-radius: 20px;
+    border: 2px solid black;
+    padding: 5px;
+    font-size: 14px;
+    margin-top: 5px;
+    display: inline-block;
+    color: black;
+    margin-right: 25px;
+}
+
+.btnEdit {
+    text-decoration: none;
+    background: #00fff1;
+    border-radius: 20px;
+    border: 2px solid black;
+    padding: 5px;
+    font-size: 14px;
+    margin-top: 5px;
+    display: inline-block;
+    color: black;
+}
+
+.btnEdit:active {
+    background: #095955;
+}
+
+.btnDelete:active {
+    background: #480606;
+}
+
+.textQuote {
+    background: cadetblue;
+    border-radius: 5px;
+    font-size: 20px;
+    padding: 2px;
+    display: block;
+    word-wrap: break-word;
+}
+

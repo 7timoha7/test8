@@ -19,3 +19,18 @@
     height: 20px;
     margin-bottom: 20px;
 }
+
+.btnFormSave {
+    background: #00fff1;
+    border-radius: 20px;
+    border: 2px solid black;
+    padding: 5px;
+    font-size: 14px;
+    margin-top: 5px;
+    display: inline-block;
+    color: black;
+}
+
+.btnFormSave:active {
+    background: #215453;
+}

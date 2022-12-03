@@ -2,8 +2,8 @@ import React, {useCallback, useEffect, useState} from 'react';
 import {QuoteType} from "../../types";
 import {useLocation, useNavigate, useParams} from "react-router-dom";
 import axiosApi from "../../axiosApi";
-import "./FormQuote.css";
 import Preloader from "../Preloader/Preloader";
+import "./FormQuote.css";
 
 const FormQuote = () => {
   const [quoteData, setQuoteData] = useState<QuoteType>({
@@ -17,11 +17,10 @@ const FormQuote = () => {
 
   const {id} = useParams();
   const navigate = useNavigate();
-
   const location = useLocation();
 
-  useEffect(()=> {
-    setQuoteData(prev => ({...prev , text:'', category: '', author: '', id: ''}))
+  useEffect(() => {
+    setQuoteData(prev => ({...prev, text: '', category: '', author: '', id: ''}));
   }, [location]);
 
   const fetch = useCallback(async () => {
@@ -95,7 +94,7 @@ const FormQuote = () => {
         <textarea className="text" required value={quoteData.text} name="text" onChange={onChange}/>
       </div>
       <div>
-        <button type={"submit"}>Save</button>
+        <button className="btnFormSave" type={"submit"}>Save</button>
       </div>
     </form>
   );

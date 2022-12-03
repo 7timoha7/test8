@@ -1,7 +1,7 @@
 import React, {MouseEventHandler} from 'react';
 import {QuoteType} from "../../types";
-import "./CardQuote.css";
 import {Link} from "react-router-dom";
+import "./CardQuote.css";
 
 interface Props {
   quotes: QuoteType;
@@ -12,12 +12,13 @@ const CardQuote: React.FC<Props> = ({quotes, deleteItem}) => {
 
     return (
       <div className="cardBox">
-        <p>{quotes.text}</p>
-        <p>{quotes.author}</p>
-        <p>{quotes.category}</p>
+        <div className="textQuote">
+          <p>{quotes.text}</p>
+        </div>
+        <p><span>Author: </span>{quotes.author}</p>
         <div>
-          <button onClick={deleteItem}>Delete</button>
-          <Link to={"/edit/" + quotes.id}>Edit</Link>
+          <button className="btnDelete" onClick={deleteItem}>Delete</button>
+          <Link className="btnEdit" to={"/edit/" + quotes.id}>Edit</Link>
         </div>
       </div>
     );
