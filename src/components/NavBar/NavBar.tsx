@@ -10,7 +10,7 @@ const NavBar = () => {
       </div>
       <ul className="navUl">
         <li className="navLi"><NavLink className="navLink" to={"/"}>Quotes</NavLink></li>
-        <li className="navLi"><NavLink className="navLink" to={"/newQuot"}>Submit new quotes</NavLink></li>
+        <li className="navLi"><NavLink className="navLink" to={"/add"}>Submit new quotes</NavLink></li>
       </ul>
     </div>
   );

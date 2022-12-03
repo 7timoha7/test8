@@ -1,0 +1,21 @@
+.select {
+    height: 25px;
+    width: 200px;
+    margin-bottom: 20px;
+}
+
+.form{
+    padding: 20px;
+}
+
+.text {
+    width: 300px;
+    height: 30px;
+    margin-bottom: 20px;
+}
+
+.author {
+    width: 200px;
+    height: 20px;
+    margin-bottom: 20px;
+}

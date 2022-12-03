@@ -4,6 +4,7 @@ import CategoryList from "./components/CategoryList/CategoryList";
 import {Route, Routes} from "react-router-dom";
 import AllQuotes from "./containers/AllQuotes/AllQuotes";
 import "./App.css";
+import AddOrEdit from "./containers/AddOrEdit/AddOrEdit";
 
 function App() {
   return (
@@ -19,6 +20,12 @@ function App() {
           )}/>
           <Route path={'/quotes/:id'} element={(
             <AllQuotes/>
+          )}/>
+          <Route path="/add" element={(
+            <AddOrEdit/>
+          )}/>
+          <Route path="edit/:id" element={(
+            <AddOrEdit/>
           )}/>
         </Routes>
       </main>

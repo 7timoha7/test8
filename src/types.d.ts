@@ -4,3 +4,5 @@ export interface QuoteType {
   text: string;
   id: string;
 }
+
+export type QuoteTypeNoId = Omit<QuoteType, 'id'>;

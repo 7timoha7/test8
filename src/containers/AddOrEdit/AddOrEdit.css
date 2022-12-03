@@ -1,0 +1,10 @@
+.add {
+    width: 80%;
+    display: flex;
+    margin-left: 10px;
+    border: 5px solid black;
+    border-radius: 15px;
+    background: rgba(128, 128, 128, 0.69);
+    margin-top: 10px;
+    padding-top: 10px;
+}
